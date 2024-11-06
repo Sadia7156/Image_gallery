@@ -9,7 +9,7 @@ An interactive and responsive image gallery that allows users to view images in 
 - **Navigation**: Next and Previous buttons to navigate between images in the modal.
 - **Image Captions**: Display captions for each image inside the modal.
 - **Responsive**: The gallery adapts to different screen sizes (mobile, tablet, desktop).
-- 
+ 
 ## How to Use
 
 1. Click on any image in the gallery to open it in a larger modal view.
