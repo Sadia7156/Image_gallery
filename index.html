@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h3>Photo <span>Gallery</span></h3>
+            </div>
+        </header>
+
+        <div class="image-container">
+            <div class="box1">
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/e6/8a/eb/e68aeb013ff35c31dab17a1766c0ecf4.jpg" alt="" width="100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/a6/eb/f9/a6ebf901ed06ea27f4e2527a597d5945.jpg" alt="" width="100%" onclick="openModal();currentSlide(2)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/d3/b6/96/d3b696b95fb0a6a94e26a8878622e64e.jpg" alt="" width="100%" onclick="openModal();currentSlide(3)">
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/81/62/c9/8162c9c13d7884ecd942828e304cce4a.jpg" alt="" width="100%" onclick="openModal();currentSlide(4)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/d9/21/99/d9219964e38fb31410b19666879b622a.jpg" alt="" width="100%" onclick="openModal();currentSlide(5)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/40/5e/2d/405e2d9e4548124aa5015bf78b6a2c68.jpg" alt="" width="100%" onclick="openModal();currentSlide(6)">
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/8a/1c/98/8a1c98a698d2fdbf21fb12440fdac451.jpg" alt="" width="100%" onclick="openModal();currentSlide(7)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/fe/80/97/fe8097f621babc516e87a6c71b34f603.jpg" alt="" width="100%" onclick="openModal();currentSlide(8)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://images.pexels.com/photos/101529/pexels-photo-101529.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="100%" onclick="openModal();currentSlide(9)">
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/736x/0b/ec/9f/0bec9f9094e755811c92f1f9e222cb8e.jpg" alt="" width="100%" onclick="openModal();currentSlide(10)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/a4/a7/c4/a4a7c476dfe5e776fe214ae8d65ba40d.jpg" alt="" width="100%" onclick="openModal();currentSlide(11)">
+                </div>
+
+                <div class="myImage">
+                    <img src="https://i.pinimg.com/474x/1b/82/aa/1b82aa324247b3b4d5d0833c3a264e94.jpg" alt="" width="100%" onclick="openModal();currentSlide(12)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <div class="modal-content">
+            <div class="mySlides slide-small">
+                <img src="https://i.pinimg.com/474x/e6/8a/eb/e68aeb013ff35c31dab17a1766c0ecf4.jpg">
+            </div>
+            
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/a6/eb/f9/a6ebf901ed06ea27f4e2527a597d5945.jpg" style="width:58%;">
+            </div>
+            
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/d3/b6/96/d3b696b95fb0a6a94e26a8878622e64e.jpg">
+            </div>
+        
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/81/62/c9/8162c9c13d7884ecd942828e304cce4a.jpg">
+            </div>
+
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/d9/21/99/d9219964e38fb31410b19666879b622a.jpg">
+            </div>
+
+            <div class="mySlides slide-small">
+                <img src="https://i.pinimg.com/474x/40/5e/2d/405e2d9e4548124aa5015bf78b6a2c68.jpg">
+            </div>
+
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/8a/1c/98/8a1c98a698d2fdbf21fb12440fdac451.jpg">
+            </div>
+
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/fe/80/97/fe8097f621babc516e87a6c71b34f603.jpg">
+            </div>
+
+            <div class="mySlides slide-small">
+                <img src="https://images.pexels.com/photos/101529/pexels-photo-101529.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+
+            <div class="mySlides slide-small">
+                <img src="https://i.pinimg.com/736x/0b/ec/9f/0bec9f9094e755811c92f1f9e222cb8e.jpg">
+            </div>
+
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/a4/a7/c4/a4a7c476dfe5e776fe214ae8d65ba40d.jpg" style="width:58%;">
+            </div>
+
+            <div class="mySlides slide-large">
+                <img src="https://i.pinimg.com/474x/1b/82/aa/1b82aa324247b3b4d5d0833c3a264e94.jpg">
+            </div>
+  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
